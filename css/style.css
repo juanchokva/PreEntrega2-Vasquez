@@ -1,0 +1,170 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+} 
+
+/* Estilos generales*/
+
+body{
+    background-color: rgb(248, 248, 248);
+    font-family: 'Nunito', sans-serif;
+}
+
+/* estilos de vínculos */
+
+a:link{
+    color: black;
+}
+
+a:visited{
+    color: black;
+}
+
+/* estilos de formulario */
+
+input[type=text]{
+    margin: 5px;
+}
+
+input[type=email]{
+    margin: 5px;
+}
+
+input[type=submit]{
+    margin: 5px;
+}
+
+input[type=reset]{
+    margin: 5px;
+}
+
+textarea{
+    margin: 5px;
+}
+
+/*Estilos para el header*/
+
+header {
+    background-color: rgb(148, 148, 148);
+    margin-top: 50px;
+    padding-top: 20px;
+}
+
+header h1{
+    background-color: white;
+    border: solid;
+    width: 310px;
+    height: 50px;
+    padding-top: 10px;
+    margin: 20px;
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+header div{
+    text-align: end;
+}
+
+header div img{
+    background-color: rgb(248, 248, 248);
+    padding: 5px;
+    margin: 0px 5px;
+    border-radius: 30px;
+}
+
+header nav ul{
+    text-align: center;
+}
+header nav ul li{
+    margin: 0px 30px;
+    padding: 20px;
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: large;
+}
+
+.nav-select{
+    background-color: rgb(248, 248, 248);
+    text-decoration: underline;
+}
+
+/* estilos para el main */
+
+main{
+    text-align: center;
+}
+
+main div{
+    display: flex;
+    justify-content: center;
+}
+
+main div h2{
+    background-color: white;
+    border: solid;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2px;
+    width: 150px; 
+    margin: 20px;
+}
+
+main img{
+    margin: 50px;
+}
+
+main p{
+    margin: 30px 350px;
+    text-align: justify;
+}
+
+main table{
+    text-align: justify;
+    width: 50%;
+
+}
+
+main table tr td{
+    padding: 20px;
+}
+
+.main-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+/* Ubicación lateral del párrafo al lado del reproductor en listen */
+
+.reproductor-parrafo{
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+}
+
+.parrafo-lateral{
+    width: 400px;
+    margin: 50px;
+    text-align: left;
+}
+
+/* Negrilla para una de las celdas de la tabla */
+
+.tabla-bold{
+    font-weight: bold;
+}
+
+/* estilo del footer */
+
+footer{
+    text-align: center;
+    margin: 30px;
+}

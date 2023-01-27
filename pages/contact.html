@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Esta es la fuente utilizada desde googlefonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <!--Link a la página de estilos css-->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contact | Vásquez-Ocampo</title>
+</head>
+<body>
+    <!--Encabezado del sitio-->
+    <header>
+            <h1>
+                Vásquez-Ocampo
+            </h1>
+            <!--Botones a redes sociales-->
+            <div>
+                <a href="https://www.facebook.com/juancamilo.vasquezocampo" target="_blank"> <img src="../img/facebook.png" alt="Logo de Facebook"></a>
+                <a href="https://www.instagram.com/juanchokva/" target="_blank"><img src="../img/instagram.png" alt="Logo de instagram"></a>
+                <a href="https://www.soundcloud.com/juancamilovasquez" target="_blank"><img src="../img/soundcloud.png" alt="Logo de Soundcloud"></a>
+            </div>
+            <!--Barra de navegación-->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="listen.html">Listen</a>
+                    </li>
+                    <li>
+                        <a href="works.html">Works</a>
+                    </li>
+                    <li class="nav-select">Contact</li>
+                </ul>
+            </nav>
+    </header>
+    <!--Este es el main de contact-->
+    <main class="main-contact">
+        
+        <img src="../img/contact.jpg" alt="Imagen de la sombra del compositor proyectándose hacia un arbol en una pradera">
+        <!--Este es el formulario de contacto-->
+        <form class="contact-form">
+            <fieldset>
+                <legend>Contact form</legend>
+                <div>
+                    <label for="name"></label>
+                    <input type="text" name="name" placeholder="Your name here">
+                </div>
+                <div>
+                    <label for="lastname"></label>
+                    <input type="text" name="lastname" placeholder="Your last name here">
+                </div>
+                <div>
+                    <label for="email"></label>
+                    <input type="email" name="email" placeholder="email@domain.com">
+                </div>
+                <div>
+                    <label for="info"></label>
+                    <textarea name="info" cols="30" rows="10" placeholder="Write your message..."></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Send">
+                    <input type="reset" value="Delete">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <!--Este es el footer del sitio-->
+    <footer>
+        <p>All rights reserved</p>
+        <p>2023 ©</p>
+    </footer>
+</body>
+</html>
