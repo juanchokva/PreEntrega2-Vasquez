@@ -1,4 +1,4 @@
-/* reset */
+/* reset 
 
 *{
     margin: 0;
@@ -8,19 +8,13 @@
 /* Estilos generales*/
 
 body{
-    background-color: rgb(248, 248, 248);
-    font-family: 'Nunito', sans-serif;
+    background-image: url("../img/background-1.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
 }
 
-/* estilos de vínculos */
-
-a:link{
-    color: black;
-}
-
-a:visited{
-    color: black;
-}
 
 /* estilos de formulario */
 
@@ -46,53 +40,65 @@ textarea{
 
 /*Estilos para el header*/
 
-header {
-    background-color: rgb(148, 148, 148);
-    margin-top: 50px;
-    padding-top: 20px;
+header{
+    background-image: linear-gradient(to right, rgb(148, 148, 148), rgb(248, 248, 248, 0));
+    padding-top: 1rem;
 }
 
 header h1{
     background-color: white;
     border: solid;
-    width: 310px;
-    height: 50px;
-    padding-top: 10px;
-    margin: 20px;
-    position: absolute;
-    top: 0px;
+    padding: 0.5rem;
     text-align: center;
     text-transform: uppercase;
+    transition: 0.4s;
 }
 
-header div{
-    text-align: end;
+header h1:hover{
+    box-shadow: 1px 1px 5px black;
 }
 
-header div img{
+.botones-redes{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1rem;
+}
+
+.redes-imagenes{
+    background-color: rgb(248, 248, 248, 0.7);
+    padding: 0.5rem;
+    width: 80%;
+    border-radius: 0.5rem;
+    transition: 0.4s;
+}
+
+.redes-imagenes:hover{
     background-color: rgb(248, 248, 248);
-    padding: 5px;
-    margin: 0px 5px;
-    border-radius: 30px;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 5px black;
 }
 
-header nav ul{
-    text-align: center;
-}
-header nav ul li{
-    margin: 0px 30px;
-    padding: 20px;
-    list-style: none;
-    display: inline-block;
-    text-align: center;
+
+
+.navegador-links{
+    background-color: rgb(248, 248, 248, 0.5);
+    border-radius: 0.5rem;
     text-transform: uppercase;
+    text-align: center;
     font-weight: bold;
     font-size: large;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 0.5rem;
+    margin-top: 0.5rem;
+    transition: 0.4s;
 }
 
-.nav-select{
+.navegador-links:hover{
     background-color: rgb(248, 248, 248);
-    text-decoration: underline;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 5px black;
+
 }
 
 /* estilos para el main */
@@ -118,9 +124,11 @@ main div h2{
 
 main img{
     margin: 50px;
+    opacity: 0.8;
 }
 
 main p{
+    background-color: rgb(148, 148, 148, 0.8);
     margin: 30px 350px;
     text-align: justify;
 }
