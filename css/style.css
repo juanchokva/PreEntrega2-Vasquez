@@ -8,10 +8,7 @@
 /* Estilos generales*/
 
 body{
-    background-image: url("../img/background-1.jpg");
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: rgb(248, 248, 248);
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -38,15 +35,31 @@ textarea{
     margin: 5px;
 }
 
+/*Estilos de container*/
+
+.container-home{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+
+    /*grid template areas*/
+    grid-template-areas: 
+        "header header"
+        "main aside" 
+        "footer footer";
+}
+
 /*Estilos para el header*/
 
 header{
-    background-image: linear-gradient(to right, rgb(148, 148, 148), rgb(248, 248, 248, 0));
+    background-image: linear-gradient(to bottom right, rgb(148, 148, 148), rgb(248, 248, 248, 0));
     padding-top: 1rem;
+    grid-area: header;
 }
 
 header h1{
-    background-color: white;
+    background-color: rgb(248, 248, 248, 0.7);
     border: solid;
     padding: 0.5rem;
     text-align: center;
@@ -56,6 +69,7 @@ header h1{
 
 header h1:hover{
     box-shadow: 1px 1px 5px black;
+    background-color: rgb(248, 248, 248);
 }
 
 .botones-redes{
@@ -65,9 +79,9 @@ header h1:hover{
 }
 
 .redes-imagenes{
-    background-color: rgb(248, 248, 248, 0.7);
+    background-color: rgb(148, 148, 148, 0.7);
     padding: 0.5rem;
-    width: 80%;
+    width: 70%;
     border-radius: 0.5rem;
     transition: 0.4s;
 }
@@ -105,27 +119,19 @@ header h1:hover{
 
 main{
     text-align: center;
-}
-
-main div{
+    grid-area: main;
     display: flex;
-    justify-content: center;
-}
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 
-main div h2{
-    background-color: white;
-    border: solid;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 2px;
-    width: 150px; 
-    margin: 20px;
 }
 
 main img{
-    margin: 50px;
-    opacity: 0.8;
+    width: 80%;
+    margin: 3rem;
 }
+
 
 main p{
     background-color: rgb(148, 148, 148, 0.8);
@@ -148,6 +154,27 @@ main table tr td{
     justify-content: center;
     align-items: center;
     padding: 30px;
+}
+
+/*Estilos para la barra lateral del home*/
+
+aside{
+    background-color: rgb(43, 60, 66);
+    color: rgb(248, 248, 248);
+    grid-area: aside;
+    display: flex;
+    margin-top: 3rem;
+    margin-right: 2rem;
+    padding: 0.5rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.resaltar-noticia{
+    font-weight: bold;
 }
 
 /* Ubicación lateral del párrafo al lado del reproductor en listen */
@@ -175,4 +202,5 @@ main table tr td{
 footer{
     text-align: center;
     margin: 30px;
+    grid-area: footer;
 }
