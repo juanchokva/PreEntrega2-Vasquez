@@ -29,20 +29,6 @@ textarea{
     margin: 5px;
 }
 
-/*Estilos de container*/
-
-.container-home{
-    height: 100vh;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-
-    /*grid template areas*/
-    grid-template-areas: 
-        "header"
-        "main"
-        "footer";
-}
 
 
 /*Estilos para el header*/
@@ -50,7 +36,6 @@ textarea{
 header{
     background-image: linear-gradient(to bottom right, rgb(148, 148, 148), rgb(248, 248, 248, 0));
     padding-top: 1rem;
-    grid-area: header;
 }
 
 header h1{
@@ -95,7 +80,6 @@ header h1:hover{
 
 main{
     text-align: center;
-    grid-area: main;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -103,21 +87,33 @@ main{
 
 }
 
+main h2{
+    margin: 1rem;
+}
+
 main img{
+    width: 50%;
+    margin: 3rem;
+}
+
+main .imagen-perfil{
     width: 80%;
     margin: 3rem;
 }
 
-
 main p{
-    background-color: rgb(148, 148, 148, 0.8);
-    margin: 30px 350px;
+    margin: 3rem;
     text-align: justify;
+}
+
+main .lista-obras{
+    display: flex;
+    justify-content: center;
 }
 
 main table{
     text-align: justify;
-    width: 50%;
+    width: 70%;
 
 }
 
@@ -165,7 +161,6 @@ footer{
     flex-direction: column;
     text-align: center;
     margin: 3rem;
-    grid-area: footer;
 }
 
 /*estilo botones redes sociales versión celular*/
@@ -193,14 +188,17 @@ footer{
 
 @media screen and (min-width:600px){
     
+    /*Estilos para el header */
+
     .botones-redes{
+        display: block;
         display: flex;
         justify-content: flex-end;
         margin-right: 1rem;
     }
     
     .redes-imagenes{
-        background-color: rgb(148, 148, 148, 0.7);
+        background-color: rgb(148, 148, 148, 0.5);
         border-radius: 0.5rem;
         width: 70%;
         padding: 0.5rem;
@@ -212,6 +210,8 @@ footer{
         box-shadow: 1px 1px 5px black;
     }
     
+    /* Estilos para el footer*/
+
     .botones-redes-movil{
         display: none;
     }
@@ -221,6 +221,7 @@ footer{
 
 @media screen and (min-width:1024px){
     .container-home{
+        display: grid;
         grid-template-columns: 3fr 1fr;
         grid-template-rows: 1fr 4fr 1fr;
     
@@ -230,7 +231,18 @@ footer{
             "main aside"
             "footer footer";
     }
-  
+    
+    /* Estilos para el header*/
+
+    header{
+        grid-area: header;
+    }
+
+    /* Estilos para el main */ 
+    main{
+        grid-area: main;
+    }
+
     /*Estilos para la barra lateral del home*/
 
     aside{
@@ -250,6 +262,12 @@ footer{
 
     .resaltar-noticia{
         font-weight: bold;
+    }
+
+    /* Estilos para el footer*/
+
+    footer{
+        grid-area: footer;
     }
     
 }
