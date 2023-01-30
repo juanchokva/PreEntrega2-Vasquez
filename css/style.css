@@ -7,28 +7,6 @@ body{
 }
 
 
-/* estilos de formulario */
-
-input[type=text]{
-    margin: 5px;
-}
-
-input[type=email]{
-    margin: 5px;
-}
-
-input[type=submit]{
-    margin: 5px;
-}
-
-input[type=reset]{
-    margin: 5px;
-}
-
-textarea{
-    margin: 5px;
-}
-
 /*Estilos para el header*/
 
 header{
@@ -74,7 +52,7 @@ header h1:hover{
 
 }
 
-/* estilos para el main */
+/* estilos generales para el main */
 
 main h2{
     margin: 1rem;
@@ -87,13 +65,15 @@ main h3{
 }
 
 main p{
-    margin: 1rem;
+    width: 80%;
     text-align: justify;
 }
 main img{
     width: 50%;
     margin: 3rem;
 }
+
+/*Estilos del main en home*/
 
 .main-home{
     display: flex;
@@ -106,6 +86,18 @@ main .imagen-perfil{
     margin: 3rem;
 }
 
+/*Estilos del main en about*/
+
+.main-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* Estilos del main en listen*/
+
 .foto-listen{
     display: none;
 }
@@ -117,33 +109,6 @@ main .imagen-perfil{
     align-items: center;
 
 }
-
-main .lista-obras{
-    display: flex;
-    justify-content: center;
-}
-
-main table{
-    text-align: justify;
-    width: 70%;
-
-}
-
-main table tr td{
-    padding: 20px;
-}
-
-.main-contact{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-}
-
-.espaciado-parrafos{
-    display: block;
-}
-/*estilos para Listen*/
 
 .seccion-uno{
     background-color: rgb(43, 60, 66);
@@ -175,6 +140,34 @@ main table tr td{
     padding: 1rem;
 }
 
+/*Estilos del main para works*/
+
+.main-works{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+main .lista-obras{
+    display: flex;
+    justify-content: center;
+}
+
+main table{
+    text-align: justify;
+    width: 70%;
+
+}
+
+main table tr td{
+    padding: 20px;
+}
+
+.espaciado-parrafos{
+    display: block;
+}
 
 /* Negrilla para una de las celdas de la tabla en works */
 
@@ -182,11 +175,47 @@ main table tr td{
     font-weight: bold;
 }
 
+/*Estilos para el main de contact*/
+
+.main-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* estilos de formulario */
+
+input[type=text]{
+    margin: 0.5rem;
+}
+
+input[type=email]{
+    margin: 0.5rem;
+}
+
+input[type=submit]{
+    margin: 0.5rem;
+}
+
+input[type=reset]{
+    margin: 0.5rem;
+}
+
+textarea{
+    margin: 0.5rem;
+}
+
+
+
 /*estilos para el aside del home en versión móvil*/
 
 aside{
     display: none;
 }
+
+
 
 /* estilo del footer */
 
@@ -197,7 +226,7 @@ footer{
     margin: 3rem;
 }
 
-/*estilo botones redes sociales versión celular*/
+/*estilo botones redes sociales versión móvil*/
 
 .botones-redes-movil{
     display: flex;
