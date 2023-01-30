@@ -29,12 +29,10 @@ textarea{
     margin: 5px;
 }
 
-
-
 /*Estilos para el header*/
 
 header{
-    background-image: linear-gradient(to bottom right, rgb(148, 148, 148), rgb(248, 248, 248, 0));
+    background-image: linear-gradient(to bottom right, rgb(148, 148, 148), rgb(148, 148, 148, 0));
     padding-top: 1rem;
 }
 
@@ -78,22 +76,29 @@ header h1:hover{
 
 /* estilos para el main */
 
-main{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-
+main h2{
+    margin: 1rem;
+    font-weight: bold;
 }
 
-main h2{
+main h3{
+    text-align: center;
     margin: 1rem;
 }
 
+main p{
+    margin: 1rem;
+    text-align: justify;
+}
 main img{
     width: 50%;
     margin: 3rem;
+}
+
+.main-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 main .imagen-perfil{
@@ -101,9 +106,16 @@ main .imagen-perfil{
     margin: 3rem;
 }
 
-main p{
-    margin: 3rem;
-    text-align: justify;
+.foto-listen{
+    display: none;
+}
+
+.main-listen section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
 }
 
 main .lista-obras{
@@ -128,30 +140,52 @@ main table tr td{
     padding: 30px;
 }
 
-/*estilos para el aside en versión móvil*/
+.espaciado-parrafos{
+    display: block;
+}
+/*estilos para Listen*/
 
-aside{
-    display: none;
+.seccion-uno{
+    background-color: rgb(43, 60, 66);
+    color: rgb(248, 248, 248);
+    padding: 1rem;
 }
 
-/* Ubicación lateral del párrafo al lado del reproductor en listen */
-
-.reproductor-parrafo{
-    display: flex;
-    margin: 50px;
-    justify-content: center;
+.seccion-tres{
+    background-color: rgb(43, 60, 66);
+    color: rgb(248, 248, 248);
+    padding: 1rem;
 }
 
-.parrafo-lateral{
-    width: 400px;
-    margin: 50px;
-    text-align: left;
+.seccion-cinco{
+    background-color: rgb(43, 60, 66);
+    color: rgb(248, 248, 248);
+    padding: 1rem;
 }
 
-/* Negrilla para una de las celdas de la tabla */
+.seccion-dos{
+    padding: 1rem;
+}
+
+.seccion-cuatro{
+    padding: 1rem;
+}
+
+.seccion-seis{
+    padding: 1rem;
+}
+
+
+/* Negrilla para una de las celdas de la tabla en works */
 
 .tabla-bold{
     font-weight: bold;
+}
+
+/*estilos para el aside del home en versión móvil*/
+
+aside{
+    display: none;
 }
 
 /* estilo del footer */
@@ -228,8 +262,21 @@ footer{
         /*grid template areas*/
         grid-template-areas: 
             "header header"
-            "main aside"
+            "home aside"
             "footer footer";
+    }
+
+    .main-listen{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr 1fr;
+
+        /*grid template areas*/
+        grid-template-areas: 
+            "tlisten flisten"
+            "sec1 sec2"
+            "sec4 sec3"
+            "sec5 sec6";
     }
     
     /* Estilos para el header*/
@@ -239,8 +286,47 @@ footer{
     }
 
     /* Estilos para el main */ 
-    main{
-        grid-area: main;
+    .main-home{
+        grid-area: home;
+    }
+
+    .container-titulo-listen{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .titulo-listen{
+        grid-area: tlisten;
+    }
+    .foto-listen{
+        display: inline;
+        grid-area: flisten;
+        width: 100%;
+        margin: 0;
+    }
+
+    .seccion-uno{
+        grid-area: sec1;
+    }
+
+    .seccion-dos{
+        grid-area: sec2;
+    }
+
+    .seccion-tres{
+        grid-area: sec3;
+    }
+
+    .seccion-cuatro{
+        grid-area: sec4;
+    }
+
+    .seccion-cinco{
+        grid-area: sec5;
+    }
+
+    .seccion-seis{
+        grid-area: sec6;
     }
 
     /*Estilos para la barra lateral del home*/
