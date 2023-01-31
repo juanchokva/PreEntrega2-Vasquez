@@ -75,13 +75,13 @@ main h3{
     margin: 1rem;
 }
 
-main p{
-    width: 80%;
-    text-align: justify;
-}
 main img{
     width: 50%;
     margin: 3rem;
+}
+
+.espaciado-parrafos{
+    display: block;
 }
 
 /*Estilos del main en home*/
@@ -138,37 +138,27 @@ main .imagen-perfil{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
+    padding: 3rem;
 
 }
 
 .seccion-uno{
     background-color: rgb(43, 60, 66);
     color: rgb(248, 248, 248);
-    padding: 1rem;
+    
 }
 
 .seccion-tres{
     background-color: rgb(43, 60, 66);
     color: rgb(248, 248, 248);
-    padding: 1rem;
+    
 }
 
 .seccion-cinco{
     background-color: rgb(43, 60, 66);
     color: rgb(248, 248, 248);
-    padding: 1rem;
-}
-
-.seccion-dos{
-    padding: 1rem;
-}
-
-.seccion-cuatro{
-    padding: 1rem;
-}
-
-.seccion-seis{
-    padding: 1rem;
+   
 }
 
 /*Estilos del main para works*/
@@ -187,18 +177,14 @@ main .lista-obras{
 }
 
 main table{
-    text-align: justify;
-    width: 70%;
+    width: 80%;
 
 }
 
 main table tr td{
-    padding: 20px;
+    padding: 1rem;
 }
 
-.espaciado-parrafos{
-    display: block;
-}
 
 /* Negrilla para una de las celdas de la tabla en works */
 
@@ -257,7 +243,7 @@ footer{
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 3rem;
+    margin: 2rem;
 }
 
 /*estilo botones redes sociales versión móvil*/
@@ -265,7 +251,7 @@ footer{
 .botones-redes-movil{
     display: flex;
     justify-content: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .redes-imagenes-movil{
