@@ -39,7 +39,7 @@ function datosPersonales(){
         return;
     }else{
         while(cliente == ""){
-            cliente = prompt("Por favor, escriba de nuevo su nombre")
+            cliente = prompt("Por favor, escriba de nuevo su nombre.")
             if (cliente === null){
                 return;
             }
@@ -47,13 +47,13 @@ function datosPersonales(){
     }
     alert("Bienvenido a la tienda, "+cliente);
 
-    direc = prompt("Por favor, confirme su dirección de envío");
+    direc = prompt("Por favor, confirme su dirección de envío.");
 
     if (direc === null){
         return;
     }else{
         while(direc == ""){
-            direc = prompt("Por favor, escriba de nuevo su dirección")
+            direc = prompt("Por favor, escriba de nuevo su dirección.")
             if (direc === null){
                 return;
             }
@@ -68,7 +68,7 @@ function discoAlCarrito(disco){
     if(confirm("¿Desea agregarlo al carrito?")){
         carrito.push(disco)
     }else{
-        alert("no se agregó el disco al carrito.")
+        alert("No se agregó el disco al carrito.")
     }
 }
 
@@ -92,7 +92,7 @@ function escogerDiscos(){
                 discoAlCarrito(discos[4])
                 break; 
             default:
-                alert("Por favor, ingrese un número del 1 al 5")
+                alert("Por favor, ingrese un número del 1 al 5.")
                 break;
         }
     } while (confirm("¿Desea agregar otro disco al carrito?"));
@@ -104,8 +104,8 @@ function compraDiscos(){
         const total = precios.reduce((acumulador, elemento) => acumulador + elemento, 0)
         const preciosIva = carrito.map(n => n.precioMasIva())
         const totalIva = preciosIva.reduce((acumulador2, elemento2) => acumulador2+ elemento2, 0)
-        alert(`El costo total de el (los) ${carrito.length} disco(s) es de $${total} antes de impuestos. El valor total de la compra más IVA es de $${totalIva}.`)
-        if (confirm(`Desea descontar los $${totalIva} de su tarjeta de cliente frecuente?`)){
+        alert(`El costo total de los discos es de $${total} antes de impuestos. El valor total de la compra más IVA es de $${totalIva}.`)
+        if (confirm(`¿Desea descontar los $${totalIva} de su tarjeta de cliente frecuente?`)){
             alert(`Fueron descontados $${totalIva} de su tarjeta, los discos serán enviados a la dirección ${direc}. ¡Gracias por su compra, ${cliente}!`)
         }else{
             alert("Usted canceló la transacción. ¡Lo esperamos pronto de vuelta!")
